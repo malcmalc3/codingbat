@@ -1,4 +1,6 @@
-/* Given an array of ints, is it possible to choose a group of some of the 
+//Programmer: Malcolm Milton
+
+/* Given an array of ints, is it possible to choose a group of some of the
  * ints, such that the group sums to the given target, with this additional 
  * constraint: if there are numbers in the array that are adjacent and the 
  * identical value, they must either all be chosen, or none of them chosen. 
@@ -7,22 +9,5 @@
  * find the extent of the identical values).
  */
 public boolean groupSumClump(int start, int[] nums, int target) {
-    if(start >= nums.length)
-        return target == 0;
-          
-    int i = start;
-    int sum = 0;
-    
-    while(i < nums.length && nums[start] == nums[i]) {
-        sum += nums[i];
-        i++;
-    }
-                              
-    if(groupSumClump(i, nums, target - sum))
-        return true;
-                                        
-    if(groupSumClump(i, nums, target))
-        return true;
-                                                  
-    return false;
+//Solution to problem coming soon
 }

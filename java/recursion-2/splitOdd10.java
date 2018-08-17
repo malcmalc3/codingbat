@@ -1,4 +1,6 @@
-/* Given an array of ints, is it possible to divide the ints into two groups, 
+//Programmer: Malcolm Milton
+
+/* Given an array of ints, is it possible to divide the ints into two groups,
  * so that the sum of one group is a multiple of 10, and the sum of the other 
  * group is odd. Every int must be in one group or the other. Write a 
  * recursive helper method that takes whatever arguments you like, and make 
