@@ -6,5 +6,12 @@
  * empty string "".
  */
 public String firstTwo(String str) {
-//Solution to problem coming soon
+    int length=str.length();
+
+    if(length>2)
+    {
+        length=2;
+    }
+
+    return str.substring(0,length);
 }

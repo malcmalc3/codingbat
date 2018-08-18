@@ -5,5 +5,9 @@
  * length 2, use the first 2 chars. The string length will be at least 2.
  */
 public String twoChar(String str, int index) {
-//Solution to problem coming soon
+    if(index>=str.length()-1 || index<0)
+    {
+        return str.substring(0,2);
+    }
+    return str.substring(index,index+2);
 }

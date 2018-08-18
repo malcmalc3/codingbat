@@ -4,5 +4,12 @@
  * the first, so "Hello" yields "Hlo".
  */
 public String stringBits(String str) {
-//Solution to problem coming soon
+    String str2 = "";
+
+    for(int j=0; j<str.length(); j+=2)
+    {
+        str2+= str.charAt(j);
+    }
+
+    return str2;
 }

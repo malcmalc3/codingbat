@@ -6,5 +6,15 @@
  * strings.
  */
 public int stringMatch(String a, String b) {
-//Solution to problem coming soon
+    int min = Math.min(a.length(),b.length());
+    int count = 0;
+
+    for(int j=0; j<min-1; j++)
+    {
+        if(a.substring(j,j+2).equals(b.substring(j,j+2)))
+        {
+            count++;
+        }
+    }
+    return count;
 }

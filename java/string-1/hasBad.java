@@ -6,5 +6,9 @@
  * strings.
  */
 public boolean hasBad(String str) {
-//Solution to problem coming soon
+    if(str.indexOf("bad")==0 || str.indexOf("bad")==1)
+    {
+        return true;
+    }
+    return false;
 }

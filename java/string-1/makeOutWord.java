@@ -6,5 +6,5 @@
  * going up to but not including index j.
  */
 public String makeOutWord(String out, String word) {
-//Solution to problem coming soon
+    return out.substring(0,2) + word + out.substring(2,4);
 }

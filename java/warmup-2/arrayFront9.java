@@ -4,5 +4,12 @@
  * array is a 9. The array length may be less than 4.
  */
 public boolean arrayFront9(int[] nums) {
-        //Solution to problem coming soon
+    for(int j=0; j<nums.length; j++)
+    {
+        if(j<=3&&nums[j]==9)
+        {
+            return true;
+        }
+    }
+    return false;
 }

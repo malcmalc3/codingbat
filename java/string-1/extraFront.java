@@ -5,5 +5,14 @@
  * than 2 chars, use whatever is there.
  */
 public String extraFront(String str) {
-//Solution to problem coming soon
+    int length=str.length();
+
+    if(length>2)
+    {
+        length=2;
+    }
+
+    String str2=str.substring(0,length);
+
+    return str2+str2+str2;
 }

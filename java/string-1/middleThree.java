@@ -4,5 +4,13 @@
  * so "Candy" yields "and". The string length will be at least 3.
  */
 public String middleThree(String str) {
-//Solution to problem coming soon
+    if(str.length()==3)
+    {
+        return str;
+    }
+
+    int start=(str.length()/2)-1;
+    int end=(str.length()/2)+2;
+
+    return str.substring(start,end);
 }

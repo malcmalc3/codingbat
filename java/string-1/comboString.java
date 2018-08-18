@@ -6,5 +6,10 @@
  * (length 0).
  */
 public String comboString(String a, String b) {
-//Solution to problem coming soon
+    if(a.length()>b.length())
+    {
+        return ""+b+a+b;
+    }
+
+    return ""+a+b+a;
 }

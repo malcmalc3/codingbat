@@ -8,5 +8,13 @@
  * length 1.
  */
 public String startWord(String str, String word) {
-//Solution to problem coming soon
+    if(str.indexOf(word)==0 || str.indexOf(word.substring(1,word.length()))==1 || str.indexOf(word)==1)
+    {
+        return str.substring(0,word.length());
+    }
+    if(str.length()==1&&word.length()==1)
+    {
+        return str;
+    }
+    return "";
 }

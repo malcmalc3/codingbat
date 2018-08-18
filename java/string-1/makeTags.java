@@ -6,5 +6,5 @@
  * tags around the word, e.g. "<i>Yay</i>".
  */
 public String makeTags(String tag, String word) {
-//Solution to problem coming soon
+    return "" + "<" + tag + ">" + word + "</" + tag + ">";
 }

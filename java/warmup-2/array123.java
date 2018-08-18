@@ -4,5 +4,12 @@
  * somewhere.
  */
 public boolean array123(int[] nums) {
-        //Solution to problem coming soon
+    for(int j = 0; j<nums.length-2; j++)
+    {
+        if(nums[j]==1 && nums[j+1]==2 && nums[j+2]==3)
+        {
+            return true;
+        }
+    }
+    return false;
 }

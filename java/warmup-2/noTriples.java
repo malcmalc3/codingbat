@@ -5,5 +5,12 @@
  * triples.
  */
 public boolean noTriples(int[] nums) {
-//Solution to problem coming soon
+    for(int j=0; j<nums.length-2; j++)
+    {
+        if(nums[j]==nums[j+1] && nums[j+1]==nums[j+2])
+        {
+            return false;
+        }
+    }
+    return true;
 }

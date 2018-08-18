@@ -4,5 +4,12 @@
  * copies of the original string.
  */
 public String stringTimes(String str, int n) {
-//Solution to problem coming soon
+    String str2="";
+
+    for(int x=0; x<n; x++)
+    {
+        str2+=str;
+    }
+
+    return str2;
 }

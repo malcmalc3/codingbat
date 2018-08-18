@@ -4,5 +4,5 @@
  * "WooHoo" yields "Woo".
  */
 public String firstHalf(String str) {
-//Solution to problem coming soon
+    return str.substring(0,str.length()/2);
 }

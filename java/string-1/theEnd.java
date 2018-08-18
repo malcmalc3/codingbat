@@ -5,5 +5,13 @@
  * will be non-empty.
  */
 public String theEnd(String str, boolean front) {
-//Solution to problem coming soon
+    if(str.length()==0)
+    {
+        return "";
+    }
+    if(!front)
+    {
+        return "" + str.charAt(str.length()-1);
+    }
+    return "" + str.charAt(0);
 }

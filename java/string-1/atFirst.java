@@ -4,5 +4,25 @@
  * string length is less than 2, use '@' for the missing chars.
  */
 public String atFirst(String str) {
-//Solution to problem coming soon
+    String str2="";
+
+    if(str.length()>0)
+    {
+        str2+=str.charAt(0);
+    }
+    else
+    {
+        str2+="@";
+    }
+
+    if(str.length()>1)
+    {
+        str2+=str.charAt(1);
+    }
+    else
+    {
+        str2+="@";
+    }
+
+    return str2;
 }

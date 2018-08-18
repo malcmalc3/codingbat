@@ -4,5 +4,5 @@
  * the order abba, e.g. "Hi" and "Bye" returns "HiByeByeHi".
  */
 public String makeAbba(String a, String b) {
-//Solution to problem coming soon
+    return "" + a + b + b + a;
 }

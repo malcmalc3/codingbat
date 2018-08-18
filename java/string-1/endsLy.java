@@ -3,5 +3,9 @@
 /* Given a string, return true if it ends in "ly".
  */
 public boolean endsLy(String str) {
-//Solution to problem coming soon
+    if(str.length()>1 && str.substring(str.length()-2,str.length()).equals("ly"))
+    {
+        return true;
+    }
+    return false;
 }

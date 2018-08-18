@@ -4,5 +4,10 @@
  * at the end of the string, such as with "edited".
  */
 public boolean frontAgain(String str) {
-//Solution to problem coming soon
+    if(str.length()<2)
+    {
+        return false;
+    }
+
+    return str.substring(0,2).equals(str.substring(str.length()-2,str.length()));
 }

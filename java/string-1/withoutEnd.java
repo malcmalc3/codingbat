@@ -4,5 +4,5 @@
  * "Hello" yields "ell". The string length will be at least 2.
  */
 public String withoutEnd(String str) {
-//Solution to problem coming soon
+    return str.substring(1,str.length()-1);
 }

@@ -6,5 +6,12 @@
  * correct value.
  */
 public boolean has271(int[] nums) {
-//Solution to problem coming soon
+    for (int j=0; j<nums.length-2;j++)
+    {
+        if(nums[j+1]-nums[j]==5 && Math.abs(nums[j+2]-(nums[j]-1))<=2)
+        {
+            return true;
+        }
+    }
+    return false;
 }

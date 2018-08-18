@@ -5,5 +5,14 @@
  * is length 0, use '@' for its missing char.
  */
 public String lastChars(String a, String b) {
-//Solution to problem coming soon
+    if(a.length()==0)
+    {
+        a += "@";
+    }
+    if(b.length()==0)
+    {
+        b+="@";
+    }
+
+    return ""+a.charAt(0)+b.charAt(b.length()-1);
 }

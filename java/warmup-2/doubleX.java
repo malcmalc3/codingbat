@@ -4,5 +4,11 @@
  * immediately followed by another "x".
  */
 boolean doubleX(String str) {
-//Solution to problem coming soon
+    int y = str.indexOf("x");
+
+    if(y != str.length()-1 && str.charAt(y+1) == 'x')
+    {
+        return true;
+    }
+    return false;
 }

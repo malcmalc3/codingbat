@@ -5,5 +5,19 @@
  * so "hixxxhi" yields 1 (we won't count the end substring).
  */
 public int last2(String str) {
-//Solution to problem coming soon
+    int count = 0;
+
+    if(str.length()<3)
+    {
+        return count;
+    }
+
+    String last2 = str.substring(str.length()-2,str.length());
+
+    for(int j=0; j<str.length()-2; j++)
+    {
+        if(str.substring(j,j+2).equals(last2)){count++;}
+    }
+
+    return count;
 }

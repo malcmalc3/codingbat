@@ -4,6 +4,23 @@
  * each other in the array. Also count instances where the second "6" is 
  * actually a 7.
  */
-public int array667(int[] nums) {
-        //Solution to problem coming soon
+public int array667(int[] nums)
+{
+    int count = 0;
+    boolean second = false;
+
+    for(int j=0; j<nums.length-1; j++)
+    {
+        if(nums[j+1]==6 || nums[j+1]==7)
+        {
+            second = true;
+        }
+        if(nums[j]==6 && second)
+        {
+            count ++;
+        }
+        second = false;
+    }
+
+    return count;
 }

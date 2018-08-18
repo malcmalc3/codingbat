@@ -5,5 +5,6 @@
  * least 2.
  */
 public String middleTwo(String str) {
-//Solution to problem coming soon
+    int middle = str.length()/2;
+    return "" + str.substring(middle- 1,middle+1);
 }

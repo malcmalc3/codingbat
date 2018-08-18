@@ -4,5 +4,13 @@
  * color string, otherwise return the empty string.
  */
 public String seeColor(String str) {
-//Solution to problem coming soon
+    if(str.indexOf("red")==0)
+    {
+        return "red";
+    }
+    if(str.indexOf("blue")==0)
+    {
+        return "blue";
+    }
+    return "";
 }

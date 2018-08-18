@@ -4,5 +4,9 @@
  * the string. The string may be any length, including 0.
  */
 public String withouEnd2(String str) {
-//Solution to problem coming soon
+    if(str.length()<3)
+    {
+        return"";
+    }
+    return str.substring(1,str.length()-1);
 }

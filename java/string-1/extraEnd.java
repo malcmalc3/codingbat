@@ -4,5 +4,6 @@
  * of the original string. The string length will be at least 2.
  */
 public String extraEnd(String str) {
-//Solution to problem coming soon
+    String str2 = "" + str.substring(str.length()-2, str.length());
+    return str2+str2+str2;
 }
