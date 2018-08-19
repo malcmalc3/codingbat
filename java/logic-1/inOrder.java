@@ -5,5 +5,9 @@
  * not need to be greater than a.
  */
 public boolean inOrder(int a, int b, int c, boolean bOk) {
-//Solution to problem coming soon
+    if(bOk)
+    {
+        return c > b;
+    }
+    return b>a && c>b;
 }

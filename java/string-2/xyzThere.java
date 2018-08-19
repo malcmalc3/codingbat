@@ -5,5 +5,19 @@
  * "x.xyz" does not.
  */
 public boolean xyzThere(String str) {
-//Solution to problem coming soon
+    String word = "xyz";
+    int cout = 0;
+
+    for(int x=0; x<str.length(); x++)
+    {
+        if(x+3<=str.length() && str.substring(x,x+3).equals(word))
+        {
+            if(x==0 || str.charAt(x-1) != '.')
+            {
+                return true;
+            }
+        }
+    }
+
+    return false;
 }

@@ -5,5 +5,14 @@
  * exist, returning 0 if the array is length 0.
  */
 public int sum2(int[] nums) {
-//Solution to problem coming soon
+    if(nums.length>1)
+    {
+        return nums[0] + nums[1];
+    }
+    if(nums.length==1)
+    {
+        return nums[0];
+    }
+
+    return 0;
 }

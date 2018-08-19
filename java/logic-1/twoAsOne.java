@@ -4,5 +4,5 @@
  * ints to get the third.
  */
 public boolean twoAsOne(int a, int b, int c) {
-//Solution to problem coming soon
+    return a+b==c || a+c==b || b+c==a;
 }

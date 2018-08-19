@@ -6,5 +6,14 @@
  * new int array contains all 0's.
  */
 public int[] makeLast(int[] nums) {
-//Solution to problem coming soon
+    int[] newNums = new int[nums.length*2];
+
+    for(int j=0;j<newNums.length-1;j++)
+    {
+        newNums[j]=0;
+    }
+
+    newNums[newNums.length-1] = nums[nums.length-1];
+
+    return newNums;
 }

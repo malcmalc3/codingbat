@@ -4,5 +4,5 @@
  * multiple of 20.
  */
 public boolean more20(int n) {
-//Solution to problem coming soon
+    return n%20==1 || n%20==2;
 }

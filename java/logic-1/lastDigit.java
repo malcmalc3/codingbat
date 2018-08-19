@@ -4,5 +4,9 @@
  * rightmost digit. The ints are non-negative.
  */
 public boolean lastDigit(int a, int b, int c) {
-//Solution to problem coming soon
+    a = a%10;
+    b = b%10;
+    c = c%10;
+
+    return a==b || a==c || b==c;
 }

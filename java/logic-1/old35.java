@@ -4,5 +4,5 @@
  * not both.
  */
 public boolean old35(int n) {
-//Solution to problem coming soon
+    return (n%3==0&&n%5!=0) || (n%3!=0&&n%5==0);
 }

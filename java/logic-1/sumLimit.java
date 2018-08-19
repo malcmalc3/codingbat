@@ -5,5 +5,10 @@
  * just return a without b.
  */
 public int sumLimit(int a, int b) {
-//Solution to problem coming soon
+    int sum = a + b;
+    if(String.valueOf(a).length() == String.valueOf(sum).length())
+    {
+        return sum;
+    }
+    return a;
 }

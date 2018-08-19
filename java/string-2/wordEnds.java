@@ -6,5 +6,23 @@
  * a char may be included twice if it is between two words.
  */
 public String wordEnds(String str, String word) {
-//Solution to problem coming soon
+    String str2 = "";
+    int length = word.length();
+
+    for(int x=0; x<str.length(); x++)
+    {
+        if(x+length<=str.length() && str.substring(x,x+length).equals(word))
+        {
+            if(x!=0)
+            {
+                str2+=str.substring(x-1,x);
+            }
+            if(x+length<str.length())
+            {
+                str2 += str.substring(x+length,x+length+1);
+            }
+        }
+    }
+
+    return str2;
 }

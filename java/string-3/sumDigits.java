@@ -5,5 +5,11 @@
  * the string.
  */
 public int sumDigits(String str) {
-//Solution to problem coming soon
+    int sum = 0;
+
+    for(int x=0; x<str.length(); x++)
+        if(Character.isDigit(str.charAt(x)))
+         sum += Integer.parseInt(str.substring(x,x+1));
+
+    return sum;
 }

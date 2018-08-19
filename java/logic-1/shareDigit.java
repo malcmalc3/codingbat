@@ -4,5 +4,5 @@
  * that appears in both numbers, such as the 2 in 12 and 23.
  */
 public boolean shareDigit(int a, int b) {
-//Solution to problem coming soon
+    return a/10==b/10 || a/10==b%10 || a%10==b/10 || a%10==b%10;
 }

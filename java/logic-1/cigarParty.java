@@ -7,5 +7,16 @@
  * values is successful, or false otherwise.
  */
 public boolean cigarParty(int cigars, boolean isWeekend) {
-//Solution to problem coming soon
+    if(cigars>39)
+    {
+        if(isWeekend)
+        {
+            return true;
+        }
+        if(!isWeekend&&cigars<61)
+        {
+            return true;
+        }
+    }
+    return false;
 }

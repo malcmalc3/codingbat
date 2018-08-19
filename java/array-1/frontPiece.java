@@ -5,5 +5,19 @@
  * present.
  */
 public int[] frontPiece(int[] nums) {
-        //Solution to problem coming soon
+    int count = nums.length;
+
+    if(count>2)
+    {
+        count=2;
+    }
+
+    int[] next = new int[count];
+
+    for(int j=0; j<count; j++)
+    {
+        next[j]=nums[j];
+    }
+
+    return next;
 }

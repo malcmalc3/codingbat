@@ -6,5 +6,28 @@
  * of bread.
  */
 public String getSandwich(String str) {
-//Solution to problem coming soon
+    int first = str.indexOf("bread");
+    int second = first;
+
+    if(first == -1)
+    {
+        return "";
+    }
+
+    for(int x=first; x<str.length()-4; x++)
+    {
+        if(str.substring(x,x+5).equals("bread"))
+        {
+            second=x;
+        }
+    }
+
+    if(first == second)
+    {
+        return"";
+    }
+    else
+    {
+        return str.substring(first+5, second);
+    }
 }

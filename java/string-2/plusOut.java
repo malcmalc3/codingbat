@@ -5,5 +5,20 @@
  * for appearances of the word string which are preserved unchanged.
  */
 public String plusOut(String str, String word) {
-//Solution to problem coming soon
+    String word2 = "";
+    int length = word.length();
+
+    for(int x=0; x<str.length(); x++)
+    {
+        if(x+length <= str.length() && str.substring(x,x+length).equals(word))
+        {
+            word2 += word;
+            x += length-1;
+        }
+        else
+        {
+            word2 += "+";
+        }
+    }
+    return word2;
 }

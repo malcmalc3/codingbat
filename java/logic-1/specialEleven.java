@@ -5,5 +5,5 @@
  * is special.
  */
 public boolean specialEleven(int n) {
-//Solution to problem coming soon
+    return n%11==0 || n%11==1;
 }

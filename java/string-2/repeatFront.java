@@ -6,5 +6,14 @@
  * the string, inclusive (i.e. n >= 0 and n <= str.length()).
  */
 public String repeatFront(String str, int n) {
-//Solution to problem coming soon
+    String str2 = "";
+    int n2 = n;
+
+    for(int j=0; j<=n2;j++)
+    {
+        str2 += str.substring(0,n);
+        n--;
+    }
+
+    return str2;
 }

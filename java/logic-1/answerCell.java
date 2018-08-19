@@ -5,5 +5,17 @@
  * In all cases, if you are asleep, you do not answer.
  */
 public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep) {
-//Solution to problem coming soon
+    if(isAsleep)
+    {
+        return false;
+    }
+    if(isMom)
+    {
+        return true;
+    }
+    if(isMorning)
+    {
+        return false;
+    }
+    return true;
 }

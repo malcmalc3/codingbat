@@ -5,5 +5,9 @@
  * less or equal to 1, or greater or equal to 10.
  */
 public boolean in1To10(int n, boolean outsideMode) {
-//Solution to problem coming soon
+    if(outsideMode)
+    {
+        return n<2 || n>9;
+    }
+    return n>0&&n<11;
 }

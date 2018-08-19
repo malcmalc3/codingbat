@@ -5,5 +5,12 @@
  * array will be length 2 or more.
  */
 public int[] makeMiddle(int[] nums) {
-//Solution to problem coming soon
+    int x = nums[(nums.length/2)-1];
+    int y = nums[(nums.length/2)];
+    int[] nums2 = new int[2];
+
+    nums2[0]=x;
+    nums2[1]=y;
+
+    return nums2;
 }

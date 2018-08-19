@@ -6,5 +6,43 @@
  * medium and large.
  */
 public boolean evenlySpaced(int a, int b, int c) {
-//Solution to problem coming soon
+    int small=0;
+    int medium=0;
+    int large=0;
+
+    if(a>b&&a>c){
+        large=a;
+    }
+    if(b>a&&b>c){
+        large=b;
+    }
+    if(c>a&&c>b){
+        large=c;
+    }
+    if(a<b&&a<c){
+        small=a;
+    }
+    if(b<a&&b<c){
+        small=b;
+    }
+    if(c<a&&c<b){
+        small=c;
+    }
+    if(a<large&&a>small){
+        medium=a;
+    }
+    if(b<large&&b>small){
+        medium=b;
+    }
+    if(c<large&&c>small){
+        medium=c;
+    }
+    if((a==b)&&(a!=c)){
+        return false;
+    }
+    if(Math.abs(medium-small) == Math.abs(large-medium)){
+        return true;
+    }
+
+    return false;
 }

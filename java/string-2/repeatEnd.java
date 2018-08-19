@@ -5,5 +5,12 @@
  * the length of the string, inclusive.
  */
 public String repeatEnd(String str, int n) {
-//Solution to problem coming soon
+    String str2 = "";
+
+    for(int j=0; j<n;j++)
+    {
+        str2 += str.substring(str.length()-n,str.length());
+    }
+
+    return str2;
 }

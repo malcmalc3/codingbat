@@ -9,5 +9,39 @@
  * entirely below and at the same indent level as roundSum().
  */
 public int roundSum(int a, int b, int c) {
-//Solution to problem coming soon
+    int aa = a%10;
+    int aaa = 10-aa;
+    int bb = b%10;
+    int bbb = 10-bb;
+    int cc = c%10;
+    int ccc =10-cc;
+
+    if(aa<5)
+    {
+        a=(a-aa);
+    }
+    else
+    {
+        a = a + aaa;
+    }
+
+    if(bb<5)
+    {
+        b = b - bb;
+    }
+    else
+    {
+        b = b + bbb;
+    }
+
+    if(cc<5)
+    {
+        c = c - cc;
+    }
+    else
+    {
+        c = c + ccc;
+    }
+
+    return a + b + c;
 }

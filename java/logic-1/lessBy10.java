@@ -4,5 +4,5 @@
  * than one of the others.
  */
 public boolean lessBy10(int a, int b, int c) {
-//Solution to problem coming soon
+    return Math.abs(a-b)>9 || Math.abs(a-c)>9 || Math.abs(b-c)>9;
 }

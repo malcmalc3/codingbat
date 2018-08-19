@@ -4,5 +4,13 @@
  * there are two chars.
  */
 public String doubleChar(String str) {
-//Solution to problem coming soon
+    String str2 = "";
+
+    for(int j=0; j<str.length(); j++)
+    {
+        str2 += str.charAt(j);
+        str2 += str.charAt(j);
+    }
+
+    return str2;
 }

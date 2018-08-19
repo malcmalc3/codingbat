@@ -4,5 +4,12 @@
  * the first element and the last element are equal.
  */
 public boolean sameFirstLast(int[] nums) {
-//Solution to problem coming soon
+    if(nums.length>0)
+    {
+        if(nums[0]==nums[nums.length-1])
+        {
+            return true;
+        }
+    }
+    return false;
 }

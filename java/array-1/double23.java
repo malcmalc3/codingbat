@@ -4,5 +4,13 @@
  * The array will be length 0, 1, or 2.
  */
 public boolean double23(int[] nums) {
-//Solution to problem coming soon
+    if(nums.length<2)
+    {
+        return false;
+    }
+    if((nums[0]==2 && nums[1]==2) || (nums[0]==3 && nums[1]==3))
+    {
+        return true;
+    }
+    return false;
 }

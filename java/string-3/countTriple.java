@@ -5,5 +5,11 @@
  * overlap.
  */
 public int countTriple(String str) {
-//Solution to problem coming soon
+    int triple = 0;
+
+    for(int x=0; x<str.length()-2; x++)
+        if(str.charAt(x)==str.charAt(x+1) && str.charAt(x)==str.charAt(x+2))
+            triple++;
+
+    return triple;
 }

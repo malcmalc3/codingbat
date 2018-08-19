@@ -4,5 +4,15 @@
  * both immediately before and after the star, they are the same.
  */
 public boolean sameStarChar(String str) {
-//Solution to problem coming soon
+    boolean star=true;
+
+    for(int j=1; j<str.length()-1;j++)
+    {
+        if(str.charAt(j)=='*'&&str.charAt(j-1)!=str.charAt(j+1))
+        {
+            star=false;
+        }
+    }
+
+    return star;
 }

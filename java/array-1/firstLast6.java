@@ -4,5 +4,5 @@
  * last element in the array. The array will be length 1 or more.
  */
 public boolean firstLast6(int[] nums) {
-        //Solution to problem coming soon
+    return (nums[0]==6 || nums[nums.length-1]==6);
 }

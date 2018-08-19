@@ -4,5 +4,8 @@
  * containing their middle elements.
  */
 public int[] middleWay(int[] a, int[] b) {
-//Solution to problem coming soon
+    int[] c = new int[2];
+    c[0]=a[1];
+    c[1]=b[1];
+    return c;
 }

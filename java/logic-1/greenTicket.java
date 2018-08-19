@@ -6,5 +6,14 @@
  * same, the result is 10.
  */
 public int greenTicket(int a, int b, int c) {
-//Solution to problem coming soon
+    if(a!=b && b!=c && a!=c)
+    {
+        return 0;
+    }
+    if(a==b && b==c)
+    {
+        return 20;
+    }
+
+    return 10;
 }

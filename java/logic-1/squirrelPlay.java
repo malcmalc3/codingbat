@@ -7,5 +7,9 @@
  * false otherwise.
  */
 public boolean squirrelPlay(int temp, boolean isSummer) {
-//Solution to problem coming soon
+    if(isSummer)
+    {
+        return temp>59 && temp<101;
+    }
+    return temp>59 && temp<91;
 }

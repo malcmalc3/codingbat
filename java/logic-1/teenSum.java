@@ -5,5 +5,9 @@
  * just return 19.
  */
 public int teenSum(int a, int b) {
-//Solution to problem coming soon
+    if( (a>12 && a<20) || (b>12 && b<20) )
+    {
+        return 19;
+    }
+    return a + b;
 }

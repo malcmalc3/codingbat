@@ -5,5 +5,24 @@
  * chars in a row.
  */
 public int sumNumbers(String str) {
-//Solution to problem coming soon
+    int sum = 0;
+    int start;
+    int end;
+
+    for(int x=0; x<str.length(); x++)
+    {
+        if(Character.isDigit(str.charAt(x)))
+        {
+            start = x;
+            end = x+1;
+
+            while(end<str.length() && Character.isDigit(str.charAt(end)))
+                end++;
+
+            x = end;
+            sum += Integer.parseInt(str.substring(start, end));
+        }
+    }
+
+    return sum;
 }

@@ -6,5 +6,9 @@
  * 5 5 7 or 5 5 5.
  */
 public boolean inOrderEqual(int a, int b, int c, boolean equalOk) {
-//Solution to problem coming soon
+    if(equalOk)
+    {
+        return a<=b && b<=c;
+    }
+    return a<b && b<c;
 }

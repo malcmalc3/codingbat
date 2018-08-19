@@ -4,5 +4,9 @@
  * multiple of 10.
  */
 public boolean nearTen(int num) {
-//Solution to problem coming soon
+    if(num%10==1 || num%10==2 || num%10==8 || num%10==9 || num%10==0)
+    {
+        return true;
+    }
+    return false;
 }

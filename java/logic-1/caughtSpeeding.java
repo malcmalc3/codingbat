@@ -8,5 +8,22 @@
  * 5 higher in all cases.
  */
 public int caughtSpeeding(int speed, boolean isBirthday) {
-//Solution to problem coming soon
+    int no = 61;
+    int small = 80;
+
+    if(isBirthday)
+    {
+        no += 5;
+        small += 5;
+    }
+    if(speed < no)
+    {
+        return 0;
+    }
+    if(speed > small)
+    {
+        return 2;
+    }
+
+    return 1;
 }

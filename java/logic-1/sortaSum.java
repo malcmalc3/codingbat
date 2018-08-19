@@ -4,5 +4,11 @@
  * range 10..19 inclusive, are forbidden, so in that case just return 20.
  */
 public int sortaSum(int a, int b) {
-//Solution to problem coming soon
+    int sum=a+b;
+
+    if(sum>9 && sum<21)
+    {
+        sum=20;
+    }
+    return sum;
 }

@@ -5,5 +5,9 @@
  * of a tie, return a.
  */
 public int[] biggerTwo(int[] a, int[] b) {
-//Solution to problem coming soon
+    if(a[0]+a[1] >= b[0]+b[1])
+    {
+        return a;
+    }
+    return b;
 }

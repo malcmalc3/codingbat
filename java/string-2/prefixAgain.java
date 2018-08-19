@@ -6,5 +6,13 @@
  * 1..str.length().
  */
 public boolean prefixAgain(String str, int n) {
-//Solution to problem coming soon
+    String str2 = str.substring(0,n);
+    String str3 = str.substring(1,str.length());
+
+    if(str3.indexOf(str2)==-1)
+    {
+        return false;
+    }
+
+    return true;
 }

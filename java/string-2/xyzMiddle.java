@@ -5,5 +5,22 @@
  * "xyz" must differ by at most one. This problem is harder than it looks.
  */
 public boolean xyzMiddle(String str) {
-//Solution to problem coming soon
+    int length = str.length();
+
+    if(length<3)
+    {
+        return false;
+    }
+
+    if(str.substring(length/2-1,length/2+2).equals("xyz"))
+    {
+        return true;
+    }
+
+    if(length%2==0&&str.substring(length/2-2,length/2+1).equals("xyz"))
+    {
+        return true;
+    }
+
+    return false;
 }

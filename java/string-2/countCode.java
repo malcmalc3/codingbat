@@ -5,5 +5,15 @@
  * "cooe" count.
  */
 public int countCode(String str) {
-//Solution to problem coming soon
+    int count=0;
+
+    for(int j=0; j<str.length()-3;j++)
+    {
+        if(str.charAt(j)=='c'&&str.charAt(j+1)=='o'&&str.charAt(j+3)=='e')
+        {
+            count++;
+        }
+    }
+
+    return count;
 }

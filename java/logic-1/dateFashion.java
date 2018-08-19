@@ -9,5 +9,14 @@
  * Otherwise the result is 1 (maybe).
  */
 public int dateFashion(int you, int date) {
-//Solution to problem coming soon
+    if(you<3 || date<3)
+    {
+        return 0;
+    }
+    if(you>7 || date>7)
+    {
+        return 2;
+    }
+
+    return 1;
 }

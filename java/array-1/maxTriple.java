@@ -5,5 +5,8 @@
  * least 1.
  */
 public int maxTriple(int[] nums) {
-//Solution to problem coming soon
+    int max= Math.max(nums[0],nums[nums.length/2]);
+    int maxx= Math.max(max,nums[nums.length-1]);
+
+    return maxx;
 }

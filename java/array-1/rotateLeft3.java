@@ -4,5 +4,12 @@
  * "rotated left" so {1, 2, 3} yields {2, 3, 1}.
  */
 public int[] rotateLeft3(int[] nums) {
-//Solution to problem coming soon
+    int first = nums[0];
+    int last = nums[2];
+
+    nums[0] = nums[1];
+    nums[1] = last;
+    nums[2] = first;
+
+    return nums;
 }

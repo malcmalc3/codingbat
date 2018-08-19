@@ -4,5 +4,10 @@
  * Return the modified array. The array length will be at least 1.
  */
 public int[] swapEnds(int[] nums) {
-//Solution to problem coming soon
+    int temp = nums[nums.length-1];
+
+    nums[nums.length-1] = nums[0];
+    nums[0] = temp;
+
+    return nums;
 }

@@ -5,5 +5,10 @@
  * length 1 or more.
  */
 public int[] makeEnds(int[] nums) {
-//Solution to problem coming soon
+    int[] makeEnds = new int[2];
+
+    makeEnds[0] = nums[0];
+    makeEnds[1] = nums[nums.length-1];
+
+    return makeEnds;
 }

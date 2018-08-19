@@ -5,5 +5,20 @@
  * that value. Return the changed array.
  */
 public int[] maxEnd3(int[] nums) {
-//Solution to problem coming soon
+    if(nums[0] == nums[2])
+    {
+        nums[1] = nums[0];
+    }
+    if(nums[0] > nums[2])
+    {
+        nums[1] = nums[0];
+        nums[2] = nums[0];
+    }
+    if(nums[2] > nums[0])
+    {
+        nums[1] = nums[2];
+        nums[0] = nums[2];
+    }
+
+    return nums;
 }

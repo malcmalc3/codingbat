@@ -4,5 +4,15 @@
  * followed by a 3, set the 3 element to 0. Return the changed array.
  */
 public int[] fix23(int[] nums) {
-        //Solution to problem coming soon
+    for(int j=0; j<nums.length; j++)
+    {
+        if(nums[j]==2)
+        {
+            if(nums[j+1]==3)
+            {
+                nums[j+1]=0;
+            }
+        }
+    }
+    return nums;
 }
