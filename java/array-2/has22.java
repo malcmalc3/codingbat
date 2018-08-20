@@ -4,5 +4,11 @@
  * somewhere.
  */
 public boolean has22(int[] nums) {
-//Solution to problem coming soon
+    boolean twotwo = false;
+
+    for(int x=1; x<nums.length; x++)
+        if(nums[x] == nums[x-1] && nums[x] == 2)
+            twotwo = true;
+
+    return twotwo;
 }

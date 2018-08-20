@@ -6,5 +6,10 @@
  * start number. Note that a length-0 array is valid.
  */
 public int[] fizzArray3(int start, int end) {
-//Solution to problem coming soon
+    int[] nums = new int[end-start];
+
+    for(int x=0; x<nums.length; x++)
+        nums[x] = x+start;
+
+    return nums;
 }

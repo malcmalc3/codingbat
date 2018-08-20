@@ -6,5 +6,11 @@
  * in the range 0..nums.length inclusive.
  */
 public boolean sameEnds(int[] nums, int len) {
-//Solution to problem coming soon
+    boolean same = true;
+
+    for(int x=0, y=nums.length-len; y<nums.length; x++, y++)
+        if(y>0 && nums[x] != nums[y])
+            same = false;
+
+    return same;
 }

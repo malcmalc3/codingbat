@@ -7,5 +7,11 @@
  * that case, so it just works.
  */
 public int[] fizzArray(int n) {
-//Solution to problem coming soon
+    int[] nums = new int[n];
+
+    for(int j=0; j<n; j++){
+        nums[j]=j;
+    }
+
+    return nums;
 }

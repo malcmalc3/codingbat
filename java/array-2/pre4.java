@@ -6,5 +6,15 @@
  * it is valid in java to create an array of length 0.
  */
 public int[] pre4(int[] nums) {
-//Solution to problem coming soon
+    int count = 0;
+
+    while(nums[count] != 4)
+        count++;
+
+    int[] newNums = new int[count];
+
+    for(int x=0; x<count; x++)
+        newNums[x] = nums[x];
+
+    return newNums;
 }

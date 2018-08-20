@@ -4,5 +4,12 @@
  * a 2 or a 4 next to a 4, but not both.
  */
 public boolean either24(int[] nums) {
-//Solution to problem coming soon
+    boolean next = false;
+
+    for(int x=0; x<nums.length-1; x++)
+        if(nums[x] == nums[x+1])
+            if(nums[x] == 2 || nums[x] == 4)
+                next = next ? false : true;
+
+    return next;
 }

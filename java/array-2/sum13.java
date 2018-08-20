@@ -5,5 +5,16 @@
  * numbers that come immediately after a 13 also do not count.
  */
 public int sum13(int[] nums) {
-//Solution to problem coming soon
+    int count=0;
+
+    for(int j=0; j<nums.length; j++){
+        if(nums[j]==13){
+            j++;
+        }
+        else{
+            count+=nums[j];
+        }
+    }
+
+    return count;
 }

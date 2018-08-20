@@ -4,5 +4,10 @@
  * no 3's.
  */
 public boolean lucky13(int[] nums) {
-//Solution to problem coming soon
+    for(int j=0; j<nums.length; j++){
+        if(nums[j]==1||nums[j]==3){
+            return false;
+        }
+    }
+    return true;
 }

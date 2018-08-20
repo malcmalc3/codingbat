@@ -7,5 +7,19 @@
  * and a 3 appears in the array before any 4.
  */
 public int[] fix34(int[] nums) {
-//Solution to problem coming soon
+    int fourPos = 0;
+    for(int i=0; i<nums.length; i++)
+    {
+        if(nums[i] == 3)
+        {
+            while(nums[fourPos] != 4)
+            {
+                fourPos++;
+            }
+            nums[fourPos] = nums[i+1];
+            nums[i+1] = 4;
+            i++;
+        }
+    }
+    return nums;
 }

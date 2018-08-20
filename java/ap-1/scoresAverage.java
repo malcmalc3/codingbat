@@ -9,5 +9,17 @@
  * scoresAverage().
  */
 public int scoresAverage(int[] scores) {
-//Solution to problem coming soon
+    int count1=0;
+    int count2=0;
+    int length=scores.length;
+
+    for(int j=0; j<length; j++){
+        if(j<length/2){
+            count1 += scores[j];
+        }
+        if(j>=length/2){
+            count2 += scores[j];
+        }
+    }
+    return Math.max(count1/(length/2),count2/(length/2));
 }

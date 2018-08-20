@@ -14,5 +14,23 @@
  * 1..100.
  */
 public String[] fizzBuzz(int start, int end) {
-//Solution to problem coming soon
+    String[] a = new String[end-start];
+
+    for(int j=0; j<a.length; j++){
+        a[j]=""+start;
+
+        if(start%3==0&&start%5!=0){
+            a[j]="Fizz";
+        }
+        if(start%3!=0&&start%5==0){
+            a[j]="Buzz";
+        }
+        if(start%3==0&&start%5==0){
+            a[j]="FizzBuzz";
+        }
+
+        start++;
+    }
+
+    return a;
 }

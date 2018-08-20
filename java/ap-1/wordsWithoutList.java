@@ -5,5 +5,13 @@
  * which is more difficult because it uses arrays.
  */
 public List wordsWithoutList(String[] words, int len) {
-//Solution to problem coming soon
+    ArrayList<String> list = new ArrayList<String>();
+
+    for(int j=0; j<words.length; j++){
+        if(words[j].length()!=len){
+            list.add(words[j]);
+        }
+    }
+
+    return list;
 }

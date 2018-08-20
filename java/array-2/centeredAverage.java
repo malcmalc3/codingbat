@@ -8,5 +8,24 @@
  * or more.
  */
 public int centeredAverage(int[] nums) {
-//Solution to problem coming soon
+    int min=nums[0];
+    int max=nums[0];
+    int total=0;
+
+    for(int x=0; x<nums.length-1; x++)
+    {
+        if(nums[x+1]<min){
+            min=nums[x+1];
+        }
+        if(nums[x+1]>max){
+            max=nums[x+1];
+        }
+        total+=nums[x];
+    }
+
+    total += nums[nums.length-1];
+    total-=(min + max);
+    total /= nums.length-2;
+
+    return total;
 }

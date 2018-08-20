@@ -5,5 +5,17 @@
  * followed by at least one 7). Return 0 for no numbers.
  */
 public int sum67(int[] nums) {
-//Solution to problem coming soon
+    int sum = 0;
+    boolean range = false;
+
+    for(int x=0; x<nums.length; x++){
+        if(!range && nums[x] != 6)
+            sum += nums[x];
+        else if(!range && nums[x] == 6)
+            range = true;
+        else if(range && nums[x] == 7)
+            range = false;
+    }
+
+    return sum;
 }

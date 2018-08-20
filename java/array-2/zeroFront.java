@@ -6,5 +6,17 @@
  * {0 ,0, 1, 1}. You may modify and return the given array or make a new array.
  */
 public int[] zeroFront(int[] nums) {
-//Solution to problem coming soon
+    int temp;
+
+    for(int x=0; x<nums.length; x++)
+        if(nums[x]==0)
+            for(int y=x-1; y>-1; y--)
+                if(nums[y]!=0)
+                {
+                    temp = nums[y];
+                    nums[y] = nums[y+1];
+                    nums[y+1] = temp;
+                }
+
+    return nums;
 }

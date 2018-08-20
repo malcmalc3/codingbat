@@ -5,5 +5,15 @@
  * array will contain at least "count" even numbers.
  */
 public int[] copyEvens(int[] nums, int count) {
-//Solution to problem coming soon
+    int[] evens = new int[count];
+    int y=0, x=0;
+
+    while(y<count && x<nums.length){
+        if(nums[x]%2 == 0){
+            evens[y] = nums[x];
+            y++;
+        }
+        x++;
+    }
+    return evens;
 }

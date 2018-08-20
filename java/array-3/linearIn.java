@@ -6,5 +6,24 @@
  * advantage of the fact that both arrays are already in sorted order.
  */
 public boolean linearIn(int[] outer, int[] inner) {
-//Solution to problem coming soon
+    boolean allIn = false;
+    int i, j;
+
+    for(i=0, j=0; i<inner.length && j<outer.length; j++)
+    {
+        if(inner[i] == outer[j])
+        {
+            i++;
+        }
+    }
+    if(i < inner.length)
+    {
+        allIn = false;
+    }
+    else
+    {
+        allIn = true;
+    }
+
+    return allIn;
 }

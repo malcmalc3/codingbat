@@ -5,5 +5,10 @@
  * case just return a length 0 array.
  */
 public String[] fizzArray2(int n) {
-//Solution to problem coming soon
+    String nums[] = new String[n];
+
+    for(int x=0; x<n; x++)
+        nums[x] = "" + x;
+
+    return nums;
 }

@@ -5,5 +5,8 @@
  * Return true if the given value is everywhere in the array.
  */
 public boolean isEverywhere(int[] nums, int val) {
-//Solution to problem coming soon
+    for(int x=0; x<nums.length-1; x++)
+        if(nums[x]!=val && nums[x+1]!=val)
+            return false;
+    return true;
 }

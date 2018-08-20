@@ -5,5 +5,20 @@
  * the numbers on the other side.
  */
 public boolean canBalance(int[] nums) {
-//Solution to problem coming soon
+    int total = 0;
+    int sum = 0;
+
+    for(int j=0; j<nums.length; j++){
+        total+=nums[j];
+    }
+
+    for(int i=0; i<nums.length; i++){
+        sum+=nums[i];
+
+        if(sum==total-sum){
+            return true;
+        }
+    }
+
+    return false;
 }

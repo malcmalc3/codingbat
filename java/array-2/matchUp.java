@@ -6,5 +6,12 @@
  * or less, but are not equal.
  */
 public int matchUp(int[] nums1, int[] nums2) {
-//Solution to problem coming soon
+    int count=0;
+
+    for(int j=0; j<nums1.length; j++){
+        if(Math.abs(nums1[j]-nums2[j])==1 || Math.abs(nums1[j]-nums2[j])==2){
+            count++;
+        }
+    }
+    return count;
 }

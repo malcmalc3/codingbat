@@ -4,5 +4,12 @@
  * than the one before. The array will be length 2 or more.
  */
 public boolean scoresIncreasing(int[] scores) {
-//Solution to problem coming soon
+    boolean yes = true;
+
+    for(int j=0; j<scores.length-1; j++){
+        if(scores[j+1]<scores[j]){
+            yes=false;
+        }
+    }
+    return yes;
 }

@@ -4,5 +4,20 @@
  * or 3 odd values all next to each other.
  */
 public boolean modThree(int[] nums) {
-//Solution to problem coming soon
+    if(nums.length<3){
+        return false;
+    }
+
+    for(int j=0; j<nums.length-2; j++){
+        if( (nums[j]%2==0 && nums[j+1]%2==0) && nums[j+2]%2==0){
+            return true;
+        }
+    }
+
+    for(int j=0; j<nums.length-2; j++){
+        if(nums[j]%2==1&&nums[j+1]%2==1&&nums[j+2]%2==1){
+            return true;
+        }
+    }
+    return false;
 }
